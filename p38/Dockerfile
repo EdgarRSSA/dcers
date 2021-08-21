@@ -30,7 +30,7 @@ RUN chown -Rf ${USER} ${CODE}/ \
 
 USER ${USER}
 ENTRYPOINT ["/bin/bash"]
-CMD ["-c -l"]
+CMD [""]
 
 
 FROM python:3.8-alpine as prod
