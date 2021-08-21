@@ -29,8 +29,8 @@ RUN chown -Rf ${USER} ${CODE}/ \
     && chgrp -R ${GROUP} ${CODE}/
 
 USER ${USER}
-ENTRYPOINT ["/bin/bash"]
-CMD [""]
+#ENTRYPOINT ["/bin/bash"]
+CMD ["bash"]
 
 
 FROM python:3.8-alpine as prod
