@@ -5,6 +5,7 @@ FROM python:3.8 as development
 # UPDATE and Install
 RUN apt-get update && apt-get install -q -y \
     vim \
+    sudo \
     && rm -rf /var/lib/apt/lists/*
 
 # Users
